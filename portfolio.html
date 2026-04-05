@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Tippyer Pecosa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Tippyer Pecosa</a>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="portfolio.html">Portafolio</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero portfolio-hero">
+            <div class="container">
+                <span class="eyebrow">Mi trabajo</span>
+                <h1>Obras en exhibición</h1>
+                <p>Una colección de trabajos creativos con enfoque visual, diseño y storytelling digital. Explora las piezas y descubre el estilo único de cada proyecto.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="portfolio-grid" id="portfolio-grid"></div>
+                <div class="load-state" id="load-state">
+                    <div class="loading-spinner" id="loading-spinner"></div>
+                    <p id="load-text">Cargando más obras...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="work-modal" id="work-modal" aria-hidden="true">
+        <div class="work-modal-card" role="dialog" aria-modal="true">
+            <div class="work-modal-header">
+                <div>
+                    <span class="eyebrow">Obra destacada</span>
+                    <h2 id="work-modal-title"></h2>
+                </div>
+                <button class="work-modal-close" id="work-modal-close" aria-label="Cerrar vista de obra">×</button>
+            </div>
+            <img id="work-modal-image" class="work-modal-image" alt="Vista ampliada de obra">
+            <div class="work-modal-body">
+                <p id="work-modal-description"></p>
+                <div class="work-modal-meta">
+                    <span id="work-modal-category"></span>
+                    <span id="work-modal-date"></span>
+                    <span id="work-modal-tools"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Tippyer Pecosa — Portafolio digital</p>
+            <nav class="footer-nav">
+                <a href="index.html">Inicio</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
