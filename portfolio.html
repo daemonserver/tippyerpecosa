@@ -1,19 +1,31 @@
 <!DOCTYPE html>
+<!-- Declara el tipo de documento como HTML5 -->
 <html lang="es">
+<!-- Elemento raíz, lang="es" para español -->
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
+    <!-- Codificación UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vista responsive -->
     <title>Portafolio | Tippyer Pecosa</title>
+    <!-- Título de la página -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconexión a Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Carga fuente Google Sans -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Vincula CSS externo -->
 </head>
 <body>
+    <!-- Cuerpo de la página -->
     <header class="header">
+        <!-- Cabecera con navegación -->
         <div class="container header-inner">
             <a class="brand" href="index.html">Tippyer Pecosa</a>
+            <!-- Enlace a inicio -->
             <nav class="nav">
                 <a href="index.html">Inicio</a>
                 <a href="portfolio.html">Portafolio</a>
@@ -23,47 +35,71 @@
     </header>
 
     <main>
+        <!-- Contenido principal -->
         <section class="page-hero portfolio-hero">
+            <!-- Sección hero específica para portafolio -->
             <div class="container">
                 <span class="eyebrow">Mi trabajo</span>
+                <!-- Texto pequeño -->
                 <h1>Obras en exhibición</h1>
+                <!-- Título principal -->
                 <p>Una colección de trabajos creativos con enfoque visual, diseño y storytelling digital. Explora las piezas y descubre el estilo único de cada proyecto.</p>
+                <!-- Descripción -->
             </div>
         </section>
 
         <section class="section">
+            <!-- Sección del grid de portafolio -->
             <div class="container">
                 <div class="portfolio-grid" id="portfolio-grid"></div>
+                <!-- Contenedor donde se cargan las obras dinámicamente, id para JS -->
                 <div class="load-state" id="load-state">
+                    <!-- Estado de carga -->
                     <div class="loading-spinner" id="loading-spinner"></div>
+                    <!-- Spinner de carga -->
                     <p id="load-text">Cargando más obras...</p>
+                    <!-- Texto de carga -->
                 </div>
             </div>
         </section>
     </main>
 
     <div class="work-modal" id="work-modal" aria-hidden="true">
+        <!-- Modal para vista ampliada de obras, inicialmente oculto -->
         <div class="work-modal-card" role="dialog" aria-modal="true">
+            <!-- Contenedor del modal con roles de accesibilidad -->
             <div class="work-modal-header">
+                <!-- Cabecera del modal -->
                 <div>
                     <span class="eyebrow">Obra destacada</span>
+                    <!-- Etiqueta -->
                     <h2 id="work-modal-title"></h2>
+                    <!-- Título dinámico -->
                 </div>
                 <button class="work-modal-close" id="work-modal-close" aria-label="Cerrar vista de obra">×</button>
+                <!-- Botón de cerrar con accesibilidad -->
             </div>
             <img id="work-modal-image" class="work-modal-image" alt="Vista ampliada de obra">
+            <!-- Imagen ampliada -->
             <div class="work-modal-body">
+                <!-- Cuerpo del modal -->
                 <p id="work-modal-description"></p>
+                <!-- Descripción dinámica -->
                 <div class="work-modal-meta">
+                    <!-- Metadatos -->
                     <span id="work-modal-category"></span>
+                    <!-- Categoría -->
                     <span id="work-modal-date"></span>
+                    <!-- Fecha -->
                     <span id="work-modal-tools"></span>
+                    <!-- Herramientas -->
                 </div>
             </div>
         </div>
     </div>
 
     <footer class="footer">
+        <!-- Pie de página -->
         <div class="container footer-inner">
             <p>&copy; 2026 Tippyer Pecosa — Portafolio digital</p>
             <nav class="footer-nav">
@@ -74,5 +110,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <!-- Carga el script JavaScript para funcionalidad dinámica -->
 </body>
 </html>

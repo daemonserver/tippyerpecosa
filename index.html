@@ -1,62 +1,106 @@
 <!DOCTYPE html>
+<!-- Declara el tipo de documento como HTML5, necesario para que el navegador interprete correctamente la estructura -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML, atributo lang="es" indica que el contenido está en español para accesibilidad y SEO -->
 <head>
+    <!-- Contiene metadatos sobre el documento, no visibles en la página -->
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8, soporta caracteres especiales como acentos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles, ajustando el ancho al dispositivo y escala inicial a 1 -->
     <title>Tippyer Pecosa | Portafolio Digital</title>
+    <!-- Título de la página que aparece en la pestaña del navegador y en resultados de búsqueda -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Optimiza la carga conectándose previamente al servidor de Google Fonts para mejorar el rendimiento -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Conexión previa a Google Fonts con crossorigin para seguridad -->
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Carga la fuente Google Sans con pesos 400, 500, 600, 700 desde Google Fonts -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Vincula la hoja de estilos CSS externa ubicada en assets/css/styles.css para el diseño de la página -->
 </head>
 <body>
+    <!-- Contenido visible de la página -->
     <header class="header">
+        <!-- Cabecera fija de la página con navegación -->
         <div class="container header-inner">
+            <!-- Contenedor con clase para centrar y limitar ancho -->
             <a class="brand" href="index.html">Tippyer Pecosa</a>
+            <!-- Enlace a la página principal con el nombre de la marca, clase para estilizar -->
             <nav class="nav">
+                <!-- Navegación principal -->
                 <a href="index.html">Inicio</a>
+                <!-- Enlace a la página de inicio -->
                 <a href="portfolio.html">Portafolio</a>
+                <!-- Enlace a la página de portafolio -->
                 <a href="contacto.html">Contacto</a>
+                <!-- Enlace a la página de contacto -->
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- Contenido principal de la página -->
         <section class="hero hero-home">
+            <!-- Sección hero con fondo especial para la página de inicio -->
             <div class="container hero-grid">
+                <!-- Contenedor con grid para layout de dos columnas -->
                 <div class="hero-copy">
+                    <!-- Texto principal del hero -->
                     <span class="eyebrow">Portafolio Digital</span>
+                    <!-- Texto pequeño encima del título -->
                     <h1>Diseño creativo y proyectos con impacto.</h1>
+                    <!-- Título principal -->
                     <p>¡Bienvenido a mi portafolio!</p>
+                    <!-- Párrafo de bienvenida -->
                     <p>Ideas visuales, obras digitales y soluciones gráficas modernas.</p>
+                    <!-- Descripción adicional -->
                     <div class="hero-actions">
+                        <!-- Contenedor para botones de acción -->
                         <a class="btn btn-primary" href="portfolio.html">Ve mis obras</a>
+                        <!-- Botón primario que enlaza al portafolio -->
                         <a class="btn btn-secondary" href="contacto.html">Contáctame</a>
+                        <!-- Botón secundario que enlaza al contacto -->
                     </div>
                 </div>
 
                 <div class="hero-card">
+                    <!-- Tarjeta con imagen y texto en la segunda columna -->
                     <div class="hero-card-glow"></div>
+                    <!-- Elemento decorativo para efecto glow -->
                     <img src="assets/img/tippyer.png" alt="Tippyer Pecosa" class="hero-image">
+                    <!-- Imagen de perfil, atributo alt para accesibilidad -->
                     <div class="hero-card-body">
+                        <!-- Contenido de la tarjeta -->
                         <h2>Tippyer Pecosa</h2>
+                        <!-- Nombre en la tarjeta -->
                         <p>Soy una diseñadora gráfica independiente, capaz de crear diseños que combinen con tu estilo propio o cualquier requerimiento que solicites.</p>
+                        <!-- Descripción personal -->
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section section-features">
+            <!-- Sección de servicios -->
             <div class="container">
+                <!-- Contenedor centrado -->
                 <div class="section-header">
+                    <!-- Cabecera de la sección -->
                     <span class="eyebrow">Servicios profesionales a tu disposición</span>
+                    <!-- Texto pequeño -->
                     <h2>¿Qué puedo hacer por tu marca?</h2>
+                    <!-- Título de la sección -->
                 </div>
                 <div class="feature-grid">
+                    <!-- Grid de 3 columnas para servicios -->
                     <article class="feature-card">
+                        <!-- Artículo para cada servicio -->
                         <h3>Identidad Visual</h3>
+                        <!-- Título del servicio -->
                         <p>Construyo marcas con presencia única, consistente y elegante para entornos digitales.</p>
+                        <!-- Descripción -->
                     </article>
                     <article class="feature-card">
                         <h3>Diseños propios</h3>
@@ -71,16 +115,24 @@
         </section>
 
         <section class="section section-preview">
+            <!-- Sección de vista previa del portafolio -->
             <div class="container preview-grid">
+                <!-- Grid para texto y enlace -->
                 <div>
                     <span class="eyebrow">Obras recientes</span>
+                    <!-- Texto pequeño -->
                     <h2>Una muestra en de mi trabajo profesional</h2>
+                    <!-- Título -->
                     <p>Explora mis trabajos recientes y descubre cómo cada pieza combina estética, claridad y funcionalidad.</p>
+                    <!-- Descripción -->
                 </div>
                 <a class="text-link" href="portfolio.html">Ir al portafolio</a>
+                <!-- Enlace de texto al portafolio completo -->
             </div>
             <div class="preview-images">
+                <!-- Contenedor de imágenes de vista previa -->
                 <img src="assets/img/destacada.jpg" alt="Obra destacada" loading="lazy">
+                <!-- Imagen destacada, loading="lazy" para carga diferida -->
                 <img src="assets/img/creativa.png" alt="Obra creativa" loading="lazy">
                 <img src="assets/img/elegante.jpg" alt="Obra elegante" loading="lazy">
             </div>
@@ -88,11 +140,17 @@
     </main>
 
     <footer class="footer">
+        <!-- Pie de página -->
         <div class="container footer-inner">
+            <!-- Contenedor centrado -->
             <p>&copy; 2026 Tippyer Pecosa — Portafolio digital</p>
+            <!-- Copyright -->
             <nav class="footer-nav">
+                <!-- Navegación en el footer -->
                 <a href="portfolio.html">Portafolio</a>
+                <!-- Enlace al portafolio -->
                 <a href="contacto.html">Contacto</a>
+                <!-- Enlace al contacto -->
             </nav>
         </div>
     </footer>

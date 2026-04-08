@@ -1,25 +1,30 @@
+/* Variables CSS globales para colores, fuentes y efectos */
+/* Se usan en todo el sitio para consistencia y facilidad de mantenimiento */
+/* Relacionadas con el diseño glassmorfismo y modo oscuro */
 :root {
-    --font-primary: 'Google Sans', 'Inter', sans-serif;
-    --bg: #f8fafc;
-    --surface: #ffffff;
-    --surface-strong: #f8f2f7;
-    --surface-alt: #f1f5f9;
-    --text: #0f172a;
-    --text-muted: #6b7280;
-    --accent: #f472b6;
-    --accent-strong: #fb7185;
-    --accent-soft: rgba(244, 114, 182, 0.16);
-    --hero-text: rgba(15, 23, 42, 0.78);
-    --button-secondary-bg: rgba(244, 114, 182, 0.12);
-    --input-bg: rgba(15, 23, 42, 0.04);
-    --border: rgba(15, 23, 42, 0.12);
-    --shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
-    --shadow-soft: 0 18px 60px rgba(15, 23, 42, 0.06);
-    --modal-backdrop: rgba(255, 255, 255, 0.72);
-    --modal-shadow: 0 48px 120px rgba(15, 23, 42, 0.12);
-    --transition: 0.25s ease;
+    --font-primary: 'Google Sans', 'Inter', sans-serif; /* Fuente principal */
+    --bg: #f8fafc; /* Color de fondo */
+    --surface: #ffffff; /* Color de superficies */
+    --surface-strong: #f8f2f7; /* Superficies más fuertes */
+    --surface-alt: #f1f5f9; /* Alternativas */
+    --text: #0f172a; /* Color de texto principal */
+    --text-muted: #6b7280; /* Texto secundario */
+    --accent: #f472b6; /* Color acento rosa */
+    --accent-strong: #fb7185; /* Acento más fuerte */
+    --accent-soft: rgba(244, 114, 182, 0.16); /* Acento suave */
+    --hero-text: rgba(15, 23, 42, 0.78); /* Texto en hero */
+    --button-secondary-bg: rgba(244, 114, 182, 0.12); /* Fondo botones secundarios */
+    --input-bg: rgba(15, 23, 42, 0.04); /* Fondo inputs */
+    --border: rgba(15, 23, 42, 0.12); /* Color bordes */
+    --shadow: 0 24px 80px rgba(15, 23, 42, 0.08); /* Sombras */
+    --shadow-soft: 0 18px 60px rgba(15, 23, 42, 0.06); /* Sombras suaves */
+    --modal-backdrop: rgba(255, 255, 255, 0.72); /* Fondo modal */
+    --modal-shadow: 0 48px 120px rgba(15, 23, 42, 0.12); /* Sombra modal */
+    --transition: 0.25s ease; /* Transiciones */
 }
 
+/* Media query para modo oscuro basado en preferencia del sistema */
+/* Sobrescribe variables para tema oscuro */
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #000000;
@@ -42,6 +47,8 @@
     }
 }
 
+/* Reset básico para eliminar márgenes y paddings por defecto */
+/* Establece box-sizing border-box para todos los elementos */
 * {
     margin: 0;
     padding: 0;
@@ -73,42 +80,42 @@ a {
 button,
 input,
 textarea {
-    font: inherit;
+    font: inherit; /* Hereda fuente del padre */
 }
 
 .container {
-    width: min(1120px, calc(100% - 2rem));
-    margin: 0 auto;
+    width: min(1120px, calc(100% - 2rem)); /* Ancho máximo 1120px o 100% menos márgenes */
+    margin: 0 auto; /* Centrado horizontal */
 }
 
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    backdrop-filter: blur(16px);
-    background: rgba(255, 255, 255, 0.78);
-    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    position: sticky; /* Fijo al scroll */
+    top: 0; /* Desde arriba */
+    z-index: 50; /* Sobre otros elementos */
+    backdrop-filter: blur(16px); /* Efecto glassmorfismo */
+    background: rgba(255, 255, 255, 0.78); /* Fondo translúcido */
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08); /* Borde inferior */
 }
 
 @media (prefers-color-scheme: dark) {
     .header {
-        background: rgba(0, 0, 0, 0.88);
-        border-bottom-color: rgba(148, 163, 184, 0.12);
+        background: rgba(0, 0, 0, 0.88); /* Fondo oscuro */
+        border-bottom-color: rgba(148, 163, 184, 0.12); /* Borde oscuro */
     }
 }
 
 .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem 0;
+    display: flex; /* Flexbox para layout */
+    align-items: center; /* Alineación vertical */
+    justify-content: space-between; /* Espacio entre elementos */
+    gap: 1rem; /* Espacio entre hijos */
+    padding: 1rem 0; /* Padding vertical */
 }
 
 .brand {
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
+    font-size: 1.15rem; /* Tamaño fuente */
+    font-weight: 700; /* Negrita */
+    letter-spacing: 0.08em; /* Espaciado letras */
 }
 
 .nav {
@@ -258,7 +265,7 @@ textarea {
 }
 
 .section {
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .section-header {
@@ -453,12 +460,12 @@ textarea {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
 .contact-panel {
-    padding: 2.5rem;
+    padding: 2rem;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 28px;
@@ -527,7 +534,7 @@ textarea {
     width: fit-content;
     padding: 1rem 2rem;
     background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-    color: #0b1120;
+    color: #ffffff;
     border-radius: 999px;
     border: none;
     cursor: pointer;
@@ -673,4 +680,50 @@ textarea {
     .hero {
         padding-top: 3rem;
     }
+}
+
+.social-links {
+    display: flex; /* Layout horizontal */
+    flex-wrap: wrap; /* Wrap en móviles */
+    gap: 3rem; /* Espacio entre enlaces */
+    margin-top: 3.5rem; /* Margen superior */
+}
+
+.social-link {
+    display: inline-flex; /* Flex para icono y texto */
+    align-items: center; /* Alineación vertical */
+    gap: 0.75rem; /* Espacio icono-texto */
+    padding: 1rem 1.5rem; /* Padding interno */
+    background: rgba(255, 255, 255, 0.8); /* Fondo glassmorfismo */
+    backdrop-filter: blur(12px); /* Efecto blur */
+    border: 1px solid rgba(15, 23, 42, 0.1); /* Borde sutil */
+    border-radius: 24px; /* Bordes redondeados */
+    color: var(--text); /* Color texto */
+    font-weight: 500; /* Peso fuente */
+    transition: transform var(--transition), background-color var(--transition), border-color var(--transition); /* Transiciones suaves */
+}
+
+@media (prefers-color-scheme: dark) {
+    .social-link {
+        background: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+        border-color: rgba(148, 163, 184, 0.2); /* Borde oscuro */
+    }
+}
+
+.social-link:hover {
+    transform: translateY(-2px); /* Elevación hover */
+    background: rgba(255, 255, 255, 0.9); /* Fondo más opaco */
+    border-color: var(--accent); /* Borde acento */
+}
+
+@media (prefers-color-scheme: dark) {
+    .social-link:hover {
+        background: rgba(0, 0, 0, 0.7); /* Fondo oscuro hover */
+    }
+}
+
+.social-link svg {
+    width: 24px; /* Ancho icono */
+    height: 24px; /* Alto icono */
+    flex-shrink: 0; /* No encoge */
 }
